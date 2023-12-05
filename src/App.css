@@ -18,7 +18,33 @@ body {
   margin: 0;
   font-family: "Share Tech Mono", monospace;
 }
+/* .container {
+  width: 1280px;
+} */
+@media (max-width: 1440px) {
+  .glowing-txt {
+    font-size: 20px;
+  }
+}
 
+@media (max-width: 1024px) {
+  .glowing-txt {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .glowing-txt {
+    font-size: 1rem;
+    letter-spacing: 6px;
+  }
+  .hero-text p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+}
 .header {
   position: sticky;
   top: 0;
@@ -117,7 +143,7 @@ nav {
     cursor: pointer;
   }
 }
-
+/* hero styles */
 .hero-text {
   display: flex;
   font-family: "Share Tech Mono", monospace;
@@ -126,6 +152,21 @@ nav {
   font-size: 40px;
   margin-top: 30px;
 }
+.hero-text p {
+  font-family: "Share Tech Mono", monospace;
+  text-align: center;
+}
+.pfp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.pfp img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+/* hero styles end */
 
 .button-effect {
   display: flex;
@@ -144,9 +185,9 @@ nav {
   background: none;
   perspective: 2em;
   font-family: "Share Tech Mono", monospace;
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: 900;
-  letter-spacing: 1em;
+  letter-spacing: 1rem;
 
   -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
     0px 0px 0.5em 0px var(--glow-color);
