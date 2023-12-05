@@ -38,8 +38,12 @@ body {
     font-size: 1rem;
     letter-spacing: 6px;
   }
-  .hero-text p {
+  .hero-text p,
+  .hero-text h1 {
     font-size: 18px;
+  }
+  .hero-text h1 {
+    font-size: 1rem;
   }
 }
 
@@ -152,9 +156,17 @@ nav {
   font-size: 40px;
   margin-top: 30px;
 }
-.hero-text p {
+.hero-text p,
+.hero-text h1 {
   font-family: "Share Tech Mono", monospace;
   text-align: center;
+  color: #f86666;
+}
+.hero-text h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-decoration: underline;
+  margin-bottom: 10px;
 }
 .pfp {
   display: flex;

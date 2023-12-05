@@ -28,7 +28,12 @@ function App() {
             </span>
           </button>
           <div className="hero-text">
-            <p>An Aspiring Fullstack Developer</p>
+            <h1>An Aspiring Fullstack Developer</h1>
+            <p>
+              Passionate full-stack developer dedicated to crafting clean and
+              efficient code. Transforming ideas into powerful, user-friendly
+              applications with creativity and precision.
+            </p>
           </div>
         </div>
       </div>
