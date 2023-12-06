@@ -1,6 +1,10 @@
 import PropTypes from "prop-types";
-
+// import { motion } from "framer-motion";
 const ProjectCard = (props) => {
+  // const containerVariants = {
+  //   hidden: { opacity: 0 },
+  //   visible: { opacity: 1, transition: { duration: 0.8 } },
+  // };
   return (
     <div className="project-card">
       <div className="project-img">

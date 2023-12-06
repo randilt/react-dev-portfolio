@@ -8,8 +8,33 @@ import Heading from "./components/Heading";
 import projects from "./content/projects";
 import Skill from "./components/Skill";
 import skills from "./content/skills";
-
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 function App() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ triggerOnce: true });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.3, // Adjust the stagger duration as needed
+      },
+    },
+  };
+
+  const skillVariants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: { opacity: 1, x: 0 },
+  };
+
   return (
     <>
       <Navbar
@@ -22,23 +47,49 @@ function App() {
         title={information.userData.title}
       />
       <div className="hr"></div>
-      <Heading text="<Projects/>" />
+
       <section id="projects">
-        {projects.map((project) => (
-          <ProjectCard
-            key={project.id}
-            name={project.name}
-            description={project.description}
-          />
-        ))}
+        <Heading text="<My Projects/>" />
+        <motion.div
+          className="project-map"
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={containerVariants}
+        >
+          {projects.map((project, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ scale: 0.8, rotate: -5 }}
+              whileTap={{
+                scale: 0.8,
+                rotate: -90,
+                borderRadius: "100%",
+              }}
+            >
+              <ProjectCard
+                name={project.name}
+                description={project.description}
+              />
+            </motion.div>
+          ))}
+        </motion.div>
       </section>
       <section id="skills">
-        <Heading text="<Skills/>" />
-        <div className="skill-map">
+        <Heading text="<Skills and Tools/>" />
+        <motion.div
+          className="skill-map"
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={containerVariants}
+        >
           {skills.map((skill, index) => (
-            <Skill skill={skill} key={index} />
+            <motion.div key={index} variants={skillVariants}>
+              <Skill skill={skill} />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </section>
       <Footer />
     </>

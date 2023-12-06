@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
+import Heading from "./Heading";
 
 const Hero = (props) => {
   return (
@@ -12,11 +13,17 @@ const Hero = (props) => {
           stiffness: 260,
           damping: 20,
         }}
+        whileHover={{ scale: 1.3, rotate: 10 }}
+        whileTap={{
+          scale: 0.8,
+          rotate: -90,
+          borderRadius: "100%",
+        }}
         className="pfp"
       >
         <img src={props.img} alt="" />
       </motion.div>
-
+      <Heading text="<Who Am I?/>" />
       <div className="button-effect">
         <button className="glowing-btn">
           <span className="glowing-txt">
@@ -31,9 +38,7 @@ const Hero = (props) => {
           </span>
         </button>
         <div className="hero-text">
-          <h1>{props.title}</h1>
-
-          <p>{props.description}</p>
+          <p className="hero-desc">{props.description}</p>
         </div>
       </div>
     </div>
