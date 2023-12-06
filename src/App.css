@@ -13,9 +13,12 @@
   list-style: none;
 }
 body {
+  display: flex;
+  flex-direction: column;
   background-color: #0a0101;
   color: #fff;
   margin: 0;
+  height: 100vh;
   font-family: "Share Tech Mono", monospace;
 }
 /* .container {
@@ -59,6 +62,7 @@ body {
   -webkit-backdrop-filter: blur(6px);
   border: 1px 0 solid rgba(255, 255, 255, 0.18);
   z-index: 1;
+  font-family: "Share Tech Mono", monospace;
 }
 
 nav {
@@ -72,6 +76,7 @@ nav {
   font-size: 24px;
   font-weight: bold;
   color: rgb(239, 239, 239);
+  font-family: "Share Tech Mono", monospace;
 }
 
 .logo a span {
@@ -89,6 +94,7 @@ nav {
   padding: 7px 15px;
   font-size: 17px;
   font-weight: 500;
+  font-family: "Share Tech Mono", monospace;
   transition: 0.2s all ease-in-out;
   color: rgb(255, 255, 255);
 }
@@ -381,4 +387,21 @@ nav {
   .glowing-btn {
     font-size: 1em;
   }
+}
+footer {
+  background: rgba(5, 0, 0, 0.3);
+
+  box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px 0 solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footer p {
+  font-family: "Share Tech Mono", monospace;
 }

@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import information from "./content/information";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         description={information.userData.description}
         title={information.userData.title}
       />
+      <Footer />
     </>
   );
 }
