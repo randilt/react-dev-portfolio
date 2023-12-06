@@ -58,20 +58,12 @@ function App() {
           variants={containerVariants}
         >
           {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 0.8, rotate: -5 }}
-              whileTap={{
-                scale: 0.8,
-                rotate: -90,
-                borderRadius: "100%",
-              }}
-            >
+            <div key={index}>
               <ProjectCard
                 name={project.name}
                 description={project.description}
               />
-            </motion.div>
+            </div>
           ))}
         </motion.div>
       </section>
