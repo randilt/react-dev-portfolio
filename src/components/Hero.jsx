@@ -22,6 +22,7 @@ const Hero = (props) => {
         </button>
         <div className="hero-text">
           <h1>{props.title}</h1>
+
           <p>{props.description}</p>
         </div>
       </div>
