@@ -1,11 +1,9 @@
-import information from "../content/information";
-
 const Footer = () => {
   return (
     <footer className="footer">
       <p>
-        &copy; {information.userData.firstName + information.userData.lastName}.
-        All rights reserved.
+        &copy; 2023. Made with ❤️ by{" "}
+        <a href="https://github.com/randilt">RandilT</a>.
       </p>
     </footer>
   );
