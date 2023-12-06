@@ -45,10 +45,6 @@ body {
     font-size: 1rem;
     letter-spacing: 6px;
   }
-
-  .hero-text p {
-    font-size: 10px;
-  }
 }
 
 @media (max-width: 576px) {
@@ -415,6 +411,9 @@ footer {
     font-size: 30px;
     text-align: center;
     margin-left: 0px;
+  }
+  .hero-text p {
+    font-size: 15px;
   }
 }
 /* .hr {
