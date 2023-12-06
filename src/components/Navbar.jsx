@@ -1,14 +1,16 @@
 // Navbar.js
+import PropTypes from "prop-types";
 
 import "../App.css";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <header className="header">
       <nav>
         <div className="logo">
           <a href="index.html">
-            Randil<span>T</span>
+            {props.firstName}
+            <span>{props.lastName}</span>
           </a>
         </div>
         <input type="checkbox" id="menu-toggle" />
@@ -23,7 +25,7 @@ const Navbar = () => {
             <a href="#">Skills</a>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
             <a href="#">Connect</a>
@@ -32,6 +34,11 @@ const Navbar = () => {
       </nav>
     </header>
   );
+};
+
+Navbar.propTypes = {
+  firstName: PropTypes.string.isRequired,
+  lastName: PropTypes.string.isRequired,
 };
 
 export default Navbar;

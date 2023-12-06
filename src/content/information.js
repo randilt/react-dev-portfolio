@@ -1,10 +1,11 @@
 //personal information start
 
 const userData = {
-  name: "Randil Tharusha",
-  title: "Full Stack Developer",
+  firstName: "Randil",
+  lastName: "Tharusha",
+  title: "",
   img: "https://pics.craiyon.com/2023-10-30/66ff0c95358e458c859ecea5d3764b32.webp",
-  description: "Passionate full stack developer from ",
+  description: "Aspiring full stack developer from Sri Lanka",
 };
 
 //personal information end

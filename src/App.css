@@ -408,16 +408,16 @@ footer {
 .heading h1 {
   font-size: 50px;
 }
-.hr {
+/* .hr {
   border: 0;
-  height: 1px;
+  height: 4px;
   background-image: linear-gradient(
     to right,
     rgba(255, 255, 255, 0),
-    rgba(211, 3, 3, 0.649),
+    rgba(108, 5, 5, 0.649),
     rgba(255, 255, 255, 0)
   );
-}
+} */
 .project-card {
   width: 400px;
   height: 100%;

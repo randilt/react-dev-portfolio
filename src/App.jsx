@@ -10,7 +10,10 @@ import projects from "./content/projects";
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbar
+        firstName={information.userData.firstName}
+        lastName={information.userData.lastName}
+      />
       <Hero
         img={information.userData.img}
         description={information.userData.description}
