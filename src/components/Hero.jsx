@@ -1,11 +1,21 @@
 import PropTypes from "prop-types";
+import { motion } from "framer-motion";
 
 const Hero = (props) => {
   return (
     <div className="container">
-      <div className="pfp">
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{ rotate: 360, scale: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 260,
+          damping: 20,
+        }}
+        className="pfp"
+      >
         <img src={props.img} alt="" />
-      </div>
+      </motion.div>
 
       <div className="button-effect">
         <button className="glowing-btn">
