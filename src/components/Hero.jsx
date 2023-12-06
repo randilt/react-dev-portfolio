@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import Heading from "./Heading";
+import socials from "../content/socials";
 
 const Hero = (props) => {
   return (
@@ -39,6 +40,16 @@ const Hero = (props) => {
         </button>
         <div className="hero-text">
           <p className="hero-desc">{props.description}</p>
+        </div>
+        <br />
+        <br />
+        Find me on:
+        <div className="hero-socials">
+          {socials.map((social, index) => (
+            <a key={index} href={social.url}>
+              <img src={`/socials/${social.icon}`} alt="" />
+            </a>
+          ))}
         </div>
       </div>
     </div>

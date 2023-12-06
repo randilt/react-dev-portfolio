@@ -9,6 +9,7 @@ const skills = [
   "python.svg",
   "bootstrap.svg",
   "git.svg",
+  "github.svg",
   "mongodb.svg",
   "tailwind.svg",
   "linux.svg",
