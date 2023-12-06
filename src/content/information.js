@@ -1,4 +1,4 @@
-//personal information
+//personal information start
 
 const userData = {
   name: "Randil Tharusha",
@@ -7,5 +7,20 @@ const userData = {
   description: "Passionate full stack developer",
 };
 
-export default userData;
 //personal information end
+
+//projects start
+const projects = [
+  {
+    name: "Project 1",
+    description: "A short description about the project",
+    stack: ["React", "NodeJS", "Express", "MongoDB"],
+    sourceCode: "",
+  },
+];
+
+//projects end
+
+const information = { userData, projects };
+
+export default information;
