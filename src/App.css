@@ -407,6 +407,14 @@ footer {
 }
 .heading h1 {
   font-size: 50px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .heading h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 0px;
+  }
 }
 /* .hr {
   border: 0;
@@ -457,4 +465,28 @@ footer {
 .project-tag {
   display: flex;
   gap: 20px;
+}
+.skill-map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.skill img {
+  max-width: 50px;
+}
+.skill {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(5, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px 0 solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  width: 120px;
 }
