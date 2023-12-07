@@ -6,7 +6,7 @@ const projects = [
       "A clone of booking.com which is built using Nextjs 14 and Oxylabs webscraping API to scrape data from the official booking.com website and show as results of our queries",
     stack: ["React", "NodeJS", "Express", "MongoDB"],
     sourceCode: "https://github.com/randilt/booking.com-clone-nextjs14",
-    img: "https://private-user-images.githubusercontent.com/51049280/287524800-41e0f5a7-3969-4ddf-af74-16b28d1a8ff3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDE5MjE5MzAsIm5iZiI6MTcwMTkyMTYzMCwicGF0aCI6Ii81MTA0OTI4MC8yODc1MjQ4MDAtNDFlMGY1YTctMzk2OS00ZGRmLWFmNzQtMTZiMjhkMWE4ZmYzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzEyMDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMjA3VDA0MDAzMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE1NmQwZmI1ZTQ4ZjVlNWJkMmQzNjg1M2I5YzYzYTQ2Nzk4ZWNhZTYzODc4NDhkOWM2YTkwNjllNTI5ZjFiOWQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ODdrefEuMVqEAfgfwM7W3789PaCreUrP4clEVSARRbk",
+    img: "/bookingcom.jpg",
   },
   {
     name: "Cyberscourge Hub",
