@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { FaGithub } from "react-icons/fa";
 // import { motion } from "framer-motion";
 const ProjectCard = (props) => {
   // const containerVariants = {
@@ -8,7 +9,7 @@ const ProjectCard = (props) => {
   return (
     <div className="project-card">
       <div className="project-img">
-        <img src="https://via.placeholder.com/300" alt={props.name} />
+        <img src={props.img} alt={props.name} />
       </div>
       <div className="project-title">
         <h2>{props.name}</h2>
@@ -16,6 +17,14 @@ const ProjectCard = (props) => {
       <div className="project-description">
         <p>{props.description}</p>
       </div>
+      <div className="project-links">
+        {props.source && (
+          <a href={props.source} className="github">
+            <FaGithub />
+          </a>
+        )}
+      </div>
+
       {/* <div className="project-tags">
         <div className="project-tag">
           {projects.stack.map((project, index) => (
@@ -31,6 +40,8 @@ ProjectCard.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   tags: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  source: PropTypes.string.isRequired,
 };
 
 export default ProjectCard;

@@ -52,7 +52,7 @@ function App() {
       <div className="hr"></div>
 
       <section id="projects">
-        <Heading text="<My Projects/>" />
+        <Heading firstWord="My" secondWord="Projects" />
         <motion.div
           className="project-map"
           ref={ref}
@@ -64,14 +64,16 @@ function App() {
             <div key={index}>
               <ProjectCard
                 name={project.name}
+                img={project.img}
                 description={project.description}
+                source={project.sourceCode}
               />
             </div>
           ))}
         </motion.div>
       </section>
       <section id="skills">
-        <Heading text="<Skills and Tools/>" />
+        <Heading firstWord="Skills" secondWord="&Tools" />
         <motion.div
           className="skill-map"
           ref={ref}
@@ -87,7 +89,7 @@ function App() {
         </motion.div>
       </section>
       <section id="contact">
-        <Heading text="<Contact Me/>" />
+        <Heading firstWord="Contact" secondWord="Me" />
         <ContactForm />
       </section>
 

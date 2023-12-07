@@ -190,203 +190,9 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px;
-}
-.glowing-btn {
-  position: relative;
-  color: var(--glow-color);
-  cursor: pointer;
-  padding: 0.35em 1em;
-  border: 0.15em solid var(--glow-color);
-  border-radius: 0.45em;
-  background: none;
-  perspective: 2em;
-  font-family: "Share Tech Mono", monospace;
-  font-size: 2rem;
-  font-weight: 900;
-  letter-spacing: 1rem;
-
-  -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
-  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
-  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
-  animation: border-flicker 2s linear infinite;
+  padding: 0 30px;
 }
 
-.glowing-txt {
-  float: left;
-  margin-right: -0.8em;
-  -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
-    0 0 0.45em var(--glow-color);
-  -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
-    0 0 0.45em var(--glow-color);
-  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
-  animation: text-flicker 3s linear infinite;
-}
-
-.faulty-letter {
-  opacity: 0.5;
-  animation: faulty-flicker 2s linear infinite;
-}
-
-.glowing-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.7;
-  filter: blur(1em);
-  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
-  background: var(--glow-color);
-  pointer-events: none;
-}
-
-.glowing-btn::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  z-index: -1;
-  background-color: var(--glow-color);
-  box-shadow: 0 0 2em 0.2em var(--glow-color);
-  transition: opacity 100ms linear;
-}
-
-.glowing-btn:hover {
-  color: rgba(0, 0, 0, 0.8);
-  text-shadow: none;
-  animation: none;
-}
-
-.glowing-btn:hover .glowing-txt {
-  animation: none;
-}
-
-.glowing-btn:hover .faulty-letter {
-  animation: none;
-  text-shadow: none;
-  opacity: 1;
-}
-
-.glowing-btn:hover:before {
-  filter: blur(1.5em);
-  opacity: 1;
-}
-
-.glowing-btn:hover:after {
-  opacity: 1;
-}
-
-@keyframes faulty-flicker {
-  0% {
-    opacity: 0.1;
-  }
-  2% {
-    opacity: 0.1;
-  }
-  4% {
-    opacity: 0.5;
-  }
-  19% {
-    opacity: 0.5;
-  }
-  21% {
-    opacity: 0.1;
-  }
-  23% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.5;
-  }
-  83% {
-    opacity: 0.4;
-  }
-
-  87% {
-    opacity: 1;
-  }
-}
-
-@keyframes text-flicker {
-  0% {
-    opacity: 0.1;
-  }
-
-  2% {
-    opacity: 1;
-  }
-
-  8% {
-    opacity: 0.1;
-  }
-
-  9% {
-    opacity: 1;
-  }
-
-  12% {
-    opacity: 0.1;
-  }
-  20% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0.3;
-  }
-  30% {
-    opacity: 1;
-  }
-
-  70% {
-    opacity: 0.7;
-  }
-  72% {
-    opacity: 0.2;
-  }
-
-  77% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 0.9;
-  }
-}
-
-@keyframes border-flicker {
-  0% {
-    opacity: 0.1;
-  }
-  2% {
-    opacity: 1;
-  }
-  4% {
-    opacity: 0.1;
-  }
-
-  8% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .glowing-btn {
-    font-size: 1em;
-  }
-}
 footer {
   background: rgba(33, 37, 41, 0.8);
 
@@ -412,6 +218,9 @@ footer {
   font-size: 50px;
   text-align: center;
 }
+.heading h1 span {
+  color: #fa3939;
+}
 @media (max-width: 768px) {
   .heading h1 {
     font-size: 30px;
@@ -434,7 +243,7 @@ footer {
 } */
 .project-card {
   width: 300px;
-  height: 100%;
+  height: 530px;
   margin: 50px;
   padding: 18px;
   background: rgba(5, 0, 0, 0.3);
@@ -442,7 +251,7 @@ footer {
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   border: 1px 0 solid rgba(255, 255, 255, 0.18);
-  border-radius: 10px;
+  border-radius: 15px;
   transition: 0.2s all ease-in-out;
   cursor: pointer;
 }
@@ -452,7 +261,7 @@ footer {
 .project-card img {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+
   border-radius: 15px;
   margin-bottom: 20px;
 }
@@ -465,7 +274,6 @@ footer {
 .project-title h2,
 .project-description p {
   text-align: center;
-  margin-bottom: 20px;
 }
 .project-title h2 {
   font-size: 30px;
@@ -476,10 +284,7 @@ footer {
   width: fit-content;
   border-radius: 10px;
 }
-.project-tag {
-  display: flex;
-  gap: 20px;
-}
+
 .skill-map {
   display: flex;
   align-items: center;
@@ -513,6 +318,7 @@ footer {
 @media (max-width: 768px) {
   .skill-map {
     margin: 10px;
+    margin-top: 50px;
     gap: 15px;
   }
   .skill {
@@ -600,6 +406,7 @@ form > input[type="submit"]:hover {
   box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.37);
 }
 .contact-section {
+  margin-top: 20px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -644,9 +451,9 @@ form > input[type="submit"]:hover {
   }
   form {
     flex: 1;
-    padding-left: 10px;
+    padding-left: 18px;
     width: 100%;
-    padding-right: 10px;
+    padding-right: 18px;
   }
   .contact-form {
     margin: 0;
@@ -664,4 +471,18 @@ form > input[type="submit"]:hover {
   .contact-links {
     flex-direction: column;
   }
+}
+.github img {
+  max-width: 50px;
+}
+.project-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.project-links a {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
 }

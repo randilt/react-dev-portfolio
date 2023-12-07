@@ -24,9 +24,9 @@ const Hero = (props) => {
       >
         <img src={props.img} alt="" />
       </motion.div>
-      <Heading text="<Who Am I?/>" />
+      <Heading firstWord="Who" secondWord="AmI?" />
       <div className="button-effect">
-        <button className="glowing-btn">
+        {/* <button className="glowing-btn">
           <span className="glowing-txt">
             <span className="faulty-letter">IAM</span>
           </span>
@@ -37,7 +37,7 @@ const Hero = (props) => {
             <span className="faulty-letter">R</span>ANDIL
             <span className="faulty-letter">T</span>HARUSHA
           </span>
-        </button>
+        </button> */}
         <div className="hero-text">
           <p className="hero-desc">{props.description}</p>
         </div>
