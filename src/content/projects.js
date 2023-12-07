@@ -12,10 +12,11 @@ const projects = [
   {
     name: "Cyberscourge Hub",
     description:
-      "An open source markdown blog app built using Hugo static site generator and deployed on Netlify. The theme of this app is 100% custom built by me. The theme is also open source and can be found on my github profile.",
+      "An open source ultra fast markdown blog app built using Hugo and deployed on Netlify. The theme of this app is 100% custom built by me. The theme is also open source and can be found on my github profile. And I regularly write articles on this blog.",
     stack: ["React", "NodeJS", "Express", "MongoDB"],
     sourceCode: "https://github.com/randilt/cyberscourge-hub",
     img: "/cyberscourge.jpg",
+    preview: "https://rtharusha.tech",
   },
   {
     name: "Jotion (Notion Clone)",
@@ -24,6 +25,7 @@ const projects = [
     stack: ["React", "NodeJS", "Express", "MongoDB"],
     sourceCode: "https://github.com/randilt/notion-clone",
     img: "/jotion.jpg",
+    preview: "#",
   },
 ];
 
