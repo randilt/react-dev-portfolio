@@ -67,6 +67,7 @@ function App() {
                 img={project.img}
                 description={project.description}
                 source={project.sourceCode}
+                preview={project.preview}
               />
             </div>
           ))}

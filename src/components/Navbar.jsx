@@ -29,7 +29,7 @@ const Navbar = (props) => {
             <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#contact" className="contact-btn">
+            <a href="#contact" className="navbar-btn">
               Contact Me
             </a>
           </li>

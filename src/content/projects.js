@@ -7,6 +7,7 @@ const projects = [
     stack: ["React", "NodeJS", "Express", "MongoDB"],
     sourceCode: "https://github.com/randilt/booking.com-clone-nextjs14",
     img: "/bookingcom.jpg",
+    preview: "https://bookingcomnext14.netlify.app/",
   },
   {
     name: "Cyberscourge Hub",
@@ -19,7 +20,7 @@ const projects = [
   {
     name: "Jotion (Notion Clone)",
     description:
-      "A clone of the popular note taking app Notion. This app is built using Nextjs 13 and Tailwind CSS. It uses clerk for authentication and convex for its real time database. The project is not yet complete and is still in development.",
+      "A clone of the popular note taking app Notion. This app is built using Nextjs 13 and Tailwind CSS. It uses clerk for authentication and convex for its real time database. The project is not yet complete ",
     stack: ["React", "NodeJS", "Express", "MongoDB"],
     sourceCode: "https://github.com/randilt/notion-clone",
     img: "/jotion.jpg",

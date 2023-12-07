@@ -242,8 +242,8 @@ footer {
   );
 } */
 .project-card {
-  width: 300px;
-  height: 530px;
+  width: 310px;
+  height: 550px;
   margin: 50px;
   padding: 18px;
   background: rgba(5, 0, 0, 0.3);
@@ -479,10 +479,61 @@ form > input[type="submit"]:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+
   margin-top: 20px;
 }
 .project-links a {
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
+  margin: 10px;
+
   color: white;
+}
+.navbar-btn {
+  padding: 10px;
+  background-color: rgb(202, 13, 13);
+  transition: 0.2s all ease-in-out;
+}
+.navbar-btn:hover {
+  transform: scale(1.1);
+  background-color: rgb(251, 69, 69);
+}
+.wrapper {
+  width: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.effect-wrapper {
+  text-align: center;
+  font-weight: normal;
+}
+
+#typed {
+  font-weight: bold;
+  color: #fa3939;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: #fa3939;
+  animation: blinker 800ms infinite;
+}
+
+.cursor.typing-true {
+  animation: none;
+}
+
+@keyframes blinker {
+  0% {
+    background-color: #fa3939;
+  }
+  50% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #fa3939;
+  }
 }
