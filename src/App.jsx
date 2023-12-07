@@ -11,6 +11,9 @@ import skills from "./content/skills";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+
+import ContactForm from "./components/ContactForm";
+
 function App() {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true });
@@ -25,7 +28,7 @@ function App() {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.3, // Adjust the stagger duration as needed
+        staggerChildren: 0.3,
       },
     },
   };
@@ -83,6 +86,11 @@ function App() {
           ))}
         </motion.div>
       </section>
+      <section id="contact">
+        <Heading text="<Contact Me/>" />
+        <ContactForm />
+      </section>
+
       <Footer />
     </>
   );
