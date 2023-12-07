@@ -41,11 +41,20 @@ const ContactForm = () => {
         </div>
       </div>
       <div className="contact-form">
-        <form>
-          <input type="text" placeholder="Your Name" required />
-          <input type="text" placeholder="Email" required />
-          <input type="text" placeholder="Subject" required />
-          <textarea placeholder="Your Message" required></textarea>
+        <form name="contact" netlify>
+          <input
+            type="text"
+            name="senderName"
+            placeholder="Your Name"
+            required
+          />
+          <input type="text" name="senderEmail" placeholder="Email" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea
+            placeholder="Your Message"
+            name="message"
+            required
+          ></textarea>
           <input type="submit" value="Send" />
         </form>
       </div>
