@@ -244,7 +244,7 @@ footer {
 .project-card {
   width: 310px;
   height: 550px;
-  margin: 50px;
+  margin: 20px 50px;
   padding: 18px;
   background: rgba(5, 0, 0, 0.3);
   box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.37);
@@ -267,6 +267,7 @@ footer {
 }
 .project-map {
   display: flex;
+  margin-top: 30px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -549,6 +550,7 @@ form > input[type="submit"]:hover {
 }
 .posts {
   display: flex;
+  margin-top: 50px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -556,6 +558,9 @@ form > input[type="submit"]:hover {
 }
 .post-desc {
   margin-top: 20px;
+}
+.post-card {
+  margin-top: 0;
 }
 
 /* .project-title .post-title {

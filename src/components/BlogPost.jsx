@@ -8,7 +8,7 @@ const BlogPost = (props) => {
   //   visible: { opacity: 1, transition: { duration: 0.8 } },
   // };
   return (
-    <div className="project-card">
+    <div className="project-card post-card">
       <div className="project-img">
         <img src={props.image} alt={props.title} />
       </div>
