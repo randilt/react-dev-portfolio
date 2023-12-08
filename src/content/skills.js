@@ -4,6 +4,7 @@ const skills = [
   "js.svg",
   "html.svg",
   "css.svg",
+  "framer-motion.svg",
   "nodejs.svg",
   "express.svg",
   "python.svg",
