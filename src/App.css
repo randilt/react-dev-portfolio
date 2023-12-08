@@ -491,12 +491,14 @@ form > input[type="submit"]:hover {
 }
 .navbar-btn {
   padding: 10px;
-  background-color: rgb(202, 13, 13);
+  background-color: #fa3939;
+  border-radius: 10px;
   transition: 0.2s all ease-in-out;
 }
 .navbar-btn:hover {
   transform: scale(1.1);
-  background-color: rgb(251, 69, 69);
+  background-color: #f10505;
+  box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.8);
 }
 .wrapper {
   width: auto;
@@ -536,4 +538,39 @@ form > input[type="submit"]:hover {
   100% {
     background-color: #fa3939;
   }
+}
+#blog {
+  margin: 50px 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* .project-title .post-title {
+  font-size: 15px;
+} */
+.cyber-scourge {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #fa3939;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.6);
+  margin-bottom: 20px;
+  transition: 0.2s all ease-in-out;
+}
+.cyber-scourge:hover {
+  transform: scale(1.1);
+  background-color: #f10505;
+  box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.8);
 }

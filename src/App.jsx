@@ -11,8 +11,9 @@ import skills from "./content/skills";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-
+import blogPosts from "./content/blogPosts";
 import ContactForm from "./components/ContactForm";
+import BlogPost from "./components/BlogPost";
 
 function App() {
   const controls = useAnimation();
@@ -88,6 +89,22 @@ function App() {
             </motion.div>
           ))}
         </motion.div>
+      </section>
+      <section id="blog">
+        <Heading firstWord="My" secondWord="Blog" />
+        <div className="posts">
+          {blogPosts.map((post, index) => (
+            <BlogPost
+              key={index}
+              title={post.title}
+              image={post.image}
+              read={post.link}
+            />
+          ))}
+        </div>
+        <a className="cyber-scourge" href="https://blog.randiltharusha.me">
+          View More Posts
+        </a>
       </section>
       <section id="contact">
         <Heading firstWord="Contact" secondWord="Me" />

@@ -26,7 +26,7 @@ const Hero = (props) => {
         <img src={props.img} alt="" />
       </motion.div>
       <Heading firstWord="Who" secondWord="AmI?" />
-      <HeroHeading />
+      {/* <HeroHeading /> */}
       <div className="button-effect">
         {/* <button className="glowing-btn">
           <span className="glowing-txt">
