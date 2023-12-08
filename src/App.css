@@ -494,6 +494,7 @@ form > input[type="submit"]:hover {
   background-color: #fa3939;
   border-radius: 10px;
   transition: 0.2s all ease-in-out;
+  box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.6);
 }
 .navbar-btn:hover {
   transform: scale(1.1);
@@ -552,6 +553,9 @@ form > input[type="submit"]:hover {
   justify-content: center;
   align-items: center;
   gap: 30px;
+}
+.post-desc {
+  margin-top: 20px;
 }
 
 /* .project-title .post-title {

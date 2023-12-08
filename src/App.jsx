@@ -99,6 +99,7 @@ function App() {
               title={post.title}
               image={post.image}
               read={post.link}
+              date={post.pubDate}
             />
           ))}
         </div>

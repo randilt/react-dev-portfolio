@@ -19,7 +19,7 @@ const Navbar = (props) => {
         </label>
         <ul className="menu">
           <li>
-            <a href="#">Home</a>
+            <a href="#">About</a>
           </li>
 
           <li>
@@ -27,6 +27,9 @@ const Navbar = (props) => {
           </li>
           <li>
             <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#blog">Blog</a>
           </li>
           <li>
             <a href="#contact" className="navbar-btn">

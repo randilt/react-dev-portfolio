@@ -16,7 +16,7 @@ const BlogPost = (props) => {
         <h2 className="post-title">{props.title}</h2>
       </div>
       <div className="project-description">
-        <p className="post-desc">{props.description}</p>
+        <p className="post-desc">{props.date}</p>
       </div>
       <div className="project-links">
         <a href={props.read}>
@@ -37,7 +37,7 @@ const BlogPost = (props) => {
 
 BlogPost.propTypes = {
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
   tags: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   read: PropTypes.string.isRequired,
