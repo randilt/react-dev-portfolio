@@ -583,3 +583,25 @@ form > input[type="submit"]:hover {
   background-color: #f10505;
   box-shadow: 0 8px 32px 0 rgba(135, 47, 31, 0.8);
 }
+.hero-typewriter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 10px;
+  font-size: 40px;
+}
+.typewriter-wrapper span {
+  color: #fa3939;
+}
+.Typewriter__wrapper {
+  color: #fa3939;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .Typewriter__wrapper,
+  .hero-typewriter {
+    font-size: 25px;
+  }
+}

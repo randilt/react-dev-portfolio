@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import Heading from "./Heading";
 import socials from "../content/socials";
-import HeroHeading from "./HeroHeading";
+import Typewriter from "typewriter-effect";
 
 const Hero = (props) => {
   return (
@@ -25,6 +25,23 @@ const Hero = (props) => {
       >
         <img src={props.img} alt="" />
       </motion.div>
+      <div className="hero-typewriter">
+        <h3>I am</h3>
+        <Typewriter
+          options={{
+            strings: [
+              "An Aspiring Developer",
+              "An AI & ML Enthusiast",
+              "An IoT Enthusiast",
+              "A Student",
+            ],
+            autoStart: true,
+            loop: true,
+          }}
+          className="typewriter"
+        />
+      </div>
+
       <Heading firstWord="Who" secondWord="AmI?" />
       {/* <HeroHeading /> */}
       <div className="button-effect">
