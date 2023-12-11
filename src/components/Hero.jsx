@@ -25,6 +25,8 @@ const Hero = (props) => {
       >
         <img src={props.img} alt="" />
       </motion.div>
+
+      <Heading firstWord="Who" secondWord="AmI?" />
       <div className="hero-typewriter">
         <h3>I am</h3>
         <Typewriter
@@ -41,8 +43,6 @@ const Hero = (props) => {
           className="typewriter"
         />
       </div>
-
-      <Heading firstWord="Who" secondWord="AmI?" />
       {/* <HeroHeading /> */}
       <div className="button-effect">
         {/* <button className="glowing-btn">
